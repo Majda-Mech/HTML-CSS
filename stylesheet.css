@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('assets/squiggle_line_stripe.svg""squiggle_line_stripe');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+/*Paars #5722CD;*/
+/*Blauw #4845E4;*/
+/*Roze #ED4385;*/
+/*Zwart #0C0C0C (voor standaard tekst);*/
+/*Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:*/
+/*Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)*/
+/*Grijs #7A7A7A (voor de service-tegel tekst); *!*/
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+   5. Media Queries/*/
+/* ------------------------------- 0. CSS Reset -------------------------------- */
+/* ------------------------------- 1. Global Styles -------------------------------- */
+/* ------------------------------- 2. Typography ----------------------------------- */
+/*.text-link {
+   color: black;
+}
+.text-link:hover {
+   color: red;
+}*/
+/* ------------------------------- 3. Layout --------------------------------------- */
+/* --------------- 3.1 Reusables ----------------------- */
+
+/* --------------- 3.2 Other --------------------------- */
+body{
+    font-family: 'Merriweather', serif;
+}
+/* ------------------------------- 4. Areas ---------------------------------------- */
+/* --------------- 4.1 Header ------------------------- */
+/*START*/
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4845E4;
+}
+.nav-items-box{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: unset;
+    width: 100%;
+}
+.navigation-list{
+    display: flex;
+    align-content: space-around;
+    justify-content: space-between;
+    flex-basis: 300px;
+    list-style: none;
+    color: white;
+}
+.intro-text-surround-test{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.website-titel {
+    display: flex;
+    text-align: center;
+    padding: 10%;
+    justify-content: center;
+}
+.button-size {
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #ED4385;
+    border-radius: 30px;
+    filter: drop-shadow(2px 2px 2px);
+    text-shadow: #F3F6F9;
+    box-shadow: black 1px 1px 1px;
+    left: calc(50% - 47%);
+}
+.snugly{
+    width: 50px;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    top: 20px;
+    left: 45%;
+    color: white;
+}
+.mid-text-header{
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.img-header {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: calc(50% - 40%);
+    bottom: 0;
+    width: 100px;
+    height: 80px;
+    margin: 60px;
+}
+/* --------------- 4.2 Introduction ------------------- */
+.intro-text-surround{
+    margin-top: 40px;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intro-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #4845E4;
+    margin: 40px;
+    padding: 10px;
+}
+.inner-intro {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    color: #4845E4;
+    flex-basis: 100px;
+    padding: 20px;
+}
+.under-header {
+    color: #4845E4;
+    margin-bottom: 50px;
+    padding: 0 30px;
+}
+.article-text{
+    padding-top: 40px;
+    flex-basis: 120px;
+    flex-grow: revert;
+    font-size: 130%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.snugly-line-padding{
+    padding: 200px;
+    margin: 100px;
+    display: flex;
+    justify-content: end;
+}
+.padding-space{
+    /*padding: 30px;*/
+    padding: 20px;
+}
+.article-grey-background{
+    background-color: #F3F6F9;
+    padding: 30px;
+}
+.article-space{
+    padding: 80px;
+    margin: 80px;
+}
+.first-article{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 30px;
+    padding: 30px;
+}
+.second-article{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    padding: 30px;
+}
+.third-article{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 30px;
+    padding: 30px;
+}
+.image-wrapper {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+/* ------------------------------- 5. Media Queries -------------------------------- */
+.block-articles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    gap:20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.icon{
+    height: 80px;
+}
+.block{
+    display: flex;
+    flex-basis: 400px;
+    min-width: 80px;
+    align-items: flex-start;
+    padding: 40px;
+    margin-bottom: 40px;
+    flex-shrink: 1;
+    flex-direction: column;
+    border: 2px solid #4845E4;
+    box-shadow: #4845E4 1px 1px 1px;
+}
+h3 {
+    font-size: 30px;
+    padding: 30px 0;
+    color: #4845E4;
+    font-weight: bold;
+}
+/*----------------------------------6*FORM-------------------------------------*/
+legend {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+h1{
+    color: white;
+    font-family: "Roboto Light" , SansSerif;
+    font-size: xx-large;
+    padding-bottom: 30px;
+}
+h4{
+    color: white;
+    font-family: "Roboto Light" , Serif;
+    font-weight: lighter;
+    padding-bottom: 30px;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    background-color: #4845E4;
+}
+.fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /*padding: 100px 200px;*/
+    /*text-align: left;*/
+    /*text-decoration: white;*/
+}
+input{
+    color: white;
+    width: 50vw;
+}
+label{
+    color: white;
+    text-align: left;
+    display: flex;
+    padding-top: 20px;
+}
+textarea{
+    width: 50vw;
+}
+.foot{
+    display: compact;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    padding-block: 5px;
+    margin-bottom: 1px;
+    color: white;
+    background-color: black;
+}
